@@ -1,0 +1,60 @@
+.MainContent {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 75px 700px;
+    background-color: lightgrey;
+
+}
+
+.TopBar {
+    grid-column: 1 / span 3;
+    background-color: turquoise;
+}
+
+.AggData {
+    grid-column: 1 / span 3;
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.AggData--aggItem {
+
+}
+
+.AggData--addButton {
+    align-self: flex-end;
+}
+
+.Content {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: white;
+    display: flex;
+
+}
+
+.Content--header {
+    padding: 20px;
+    flex: 2
+}
+
+.Content-twootList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.Content--twooter {
+    border-radius: 50%;
+    width: 10%;
+    height: auto;
+    border: 2px white;
+    padding: 10px;
+
+}
+
+.Content--twootText {
+    flex-basis: 70%;
+}
