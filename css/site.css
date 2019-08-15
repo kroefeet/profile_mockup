@@ -1,9 +1,22 @@
 .MainContent {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 100px 75px 700px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 100px 75px 700px;
     background-color: lightgrey;
 
+}
+
+.TopLinks {
+    grid-column: 1 / span 3;
+    background-color: white;
+}
+
+.TopLinks--home {
+
+}
+
+.TopLinks--login {
+    
 }
 
 .TopBar {
@@ -11,24 +24,29 @@
     background-color: turquoise;
 }
 
+
 .AggData {
     grid-column: 1 / span 3;
     background-color: white;
     margin-bottom: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
-.AggData--aggItem {
+.AggData--aggItems {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
 
 }
 
 .AggData--addButton {
-    align-self: flex-end;
+    grid-column: 3;
 }
 
 .Content {
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 4;
     background-color: white;
     display: flex;
 
